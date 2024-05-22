@@ -1,26 +1,37 @@
-.navigation {
+.navigation_outer {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  background-color: #e5e4e2;
+}
+
+.navigation {
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; */
   text-align: center;
-  background-color: #f4533e;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 2em;
 }
 
-.navigation a {
-  color: white;
+.navigation a,
+.nav_modal a {
+  color: #3c5473;
+  font-size: 1.4rem;
 }
 
 .navigation a:hover,
+a.active,
+.nav_modal a:hover,
 a.active {
-  color: silver;
+  color: #f4533e;
 }
 .logo {
   display: flex;
-  padding: 0 2em;
 }
 
 .links {
@@ -35,5 +46,21 @@ a.active {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 2em;
+}
+
+.nav_modal {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+  .nav_modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
 }
