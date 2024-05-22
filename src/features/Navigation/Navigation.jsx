@@ -2,25 +2,35 @@ import { Link } from "react-router-dom";
 import "./navigation.style.css";
 import CartIcon from "../../components/CartIcon/CartIcon";
 import Logo from "../../components/Logo/Logo";
+import { useState } from "react";
+import NavModal from "./components/NavModal";
 
 const Navigation = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleModal = () => {
+    setShowModal(!showModal);
+  };
+
   return (
     <>
-      <div className="navigation">
-        <div className="logo">
-          <Logo />
+      <div className="navigation_outer">
+        <div className="navigation">
+          <div className="logo">
+            <Logo />
+          </div>
+          <div className="links">
+            <Link to={{ pathname: "/" }}>Home</Link>
+            <Link to={{ pathname: "/offer" }}>Offer</Link>
+            <Link to={{ pathname: "/order" }}>Order</Link>
+            <Link to={{ pathname: "/about" }}>About</Link>
+            <Link to={{ pathname: "/contact" }}>Contact</Link>
+          </div>
+          <div className="navigation_cart">
+            <CartIcon />
+          </div>
         </div>
-        <div className="links">
-          <Link to={{ pathname: "/" }}>Home</Link>
-          <Link to={{ pathname: "/offer" }}>Offer</Link>
-          <Link to={{ pathname: "/order" }}>Order</Link>
-          <Link to={{ pathname: "/about" }}>About</Link>
-          <Link to={{ pathname: "/contact" }}>Contact</Link>
-        </div>
-
-        <div className="navigation_cart">
-          <CartIcon />
-        </div>
+        <NavModal onNavModal={handleModal} />
       </div>
     </>
   );
