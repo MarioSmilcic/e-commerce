@@ -3,7 +3,9 @@ import "./button.style.css";
 const Button = ({ text }) => {
   return (
     <div>
-      <button className="button">{text}</button>
+      <button className={`button ${text === "shop now" && "button_shop"}`}>
+        {text}
+      </button>
     </div>
   );
 };

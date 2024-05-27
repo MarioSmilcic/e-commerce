@@ -1,0 +1,56 @@
+/* .landing {
+  display: flex;
+  flex-direction: column;
+} */
+
+.landing_outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  padding: 3em;
+}
+
+.landing_info {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  gap: 1em;
+}
+.landing_line {
+  width: 100%;
+}
+
+.landing_headpones {
+  width: 100%;
+  object-fit: cover;
+}
+
+.landing_heading {
+  margin: 12px 0;
+}
+
+.landing_icons {
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+  background: white;
+  padding: 1em 0;
+  /* margin: 3em; */
+  margin: 0 3em 3em;
+}
+
+.landing_icon {
+  /* width: 120px; */
+  max-width: 120px;
+  filter: grayscale(100%);
+  opacity: 0.3;
+}
+
+.landing_icon:hover {
+  /* filter: invert(1%); */
+  filter: none;
+  opacity: 1;
+}

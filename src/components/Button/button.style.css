@@ -1,12 +1,13 @@
 .button {
   border-radius: 8px;
   border: 1px solid transparent;
+  /* border: 1px solid #f47950; */
   width: 12em;
   height: 3em;
   font-size: large;
   font-weight: 700;
   font-family: inherit;
-  background-color: black;
+  background-color: #f47950;
   color: white;
   cursor: pointer;
   transition: border-color 0.25s;
@@ -16,4 +17,14 @@
 .button:hover {
   background-color: white;
   color: black;
+  border: 1px solid #f47950;
+}
+
+.button_shop {
+  background-color: #047a9c;
+}
+
+.button_shop:hover {
+  border: 1px solid #047a9c;
+  /* border: 1px  */
 }

@@ -1,0 +1,42 @@
+.showcase {
+  display: flex;
+  justify-content: center;
+  /* justify-content: space-around; */
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    white 0%,
+    white 50%,
+
+    #047a9c 50%,
+    #047a9c 100%
+  );
+  /* padding: 5em; */
+  /* gap: 5em; */
+  /* width: 100%; */
+  text-aling: center;
+}
+.showcase_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2em;
+  color: black;
+  /* width: 50%; */
+  padding: 5em;
+}
+
+.showcase_headphones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-text: center;
+  /* width: 50%; */
+  padding: 5em;
+}
+
+.showcase_headphones__img {
+  max-width: 100%;
+  filter: invert(100%);
+}
