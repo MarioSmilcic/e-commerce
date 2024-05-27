@@ -1,0 +1,33 @@
+.presentation {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 2em;
+  text-align: center;
+  padding: 10em 3em;
+  color: black;
+}
+
+.presentation_icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3em;
+}
+
+.presentation_icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.presentation_info {
+  text-align: center;
+  width: 50%;
+  width: 60%;
+  /* padding: 1em; */
+  /* font-size: 1rem; */
+}

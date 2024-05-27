@@ -1,11 +1,10 @@
-import LogoApp from "../../assets/eCommerce.png";
+import LogoCommerce from "../../assets/Logo_EC_full.png";
 import "./logo.style.css";
 
 const Logo = () => {
   return (
     <div>
-      {/* <img src={LogoApp} alt="logoApp" className="logo" /> */}
-      <h2>E&nbsp;-&nbsp;commerce</h2>
+      <img src={LogoCommerce} alt="logoApp" className="logo" />
     </div>
   );
 };
