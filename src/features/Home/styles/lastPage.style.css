@@ -1,0 +1,39 @@
+.lastPage {
+  background: white;
+  padding: 2em 4em;
+}
+
+.lastPage_outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  padding: 3em;
+  background-color: #047a9c;
+}
+
+.lastPage_info {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  gap: 1em;
+}
+.lastPage_line {
+  width: 100%;
+}
+
+.lastPage_headphones {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.lastPage_heading {
+  margin: 12px 0;
+}
+
+/* .footer {
+  color: black;
+  text-align: center;
+  margin: 3em;
+  font-weight: 500;
+} */

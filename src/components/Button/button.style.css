@@ -28,3 +28,11 @@
   border: 1px solid #047a9c;
   /* border: 1px  */
 }
+
+.button_information {
+  /* width: 15em; */
+  width: 18em;
+  font-size: small;
+  text-transform: capitalize;
+  border-radius: 0;
+}
