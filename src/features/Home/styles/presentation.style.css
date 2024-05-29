@@ -5,8 +5,12 @@
   place-items: center;
   gap: 2em;
   text-align: center;
-  padding: 10em 3em;
+  padding: 10em 4em;
   color: black;
+  font-weight: 500;
+}
+.presentation_title {
+  font-size: 2.5rem;
 }
 
 .presentation_icons {
@@ -22,6 +26,10 @@
   justify-content: center;
   align-items: center;
   gap: 1em;
+}
+
+.presentation_icon__title {
+  text-transform: uppercase;
 }
 
 .presentation_info {

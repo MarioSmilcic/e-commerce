@@ -1,0 +1,35 @@
+.recommendations {
+  background: white;
+  padding: 3;
+  color: black;
+  text-align: center;
+}
+.recommendations_title {
+  font-size: 2.5rem;
+}
+
+.recommendations_clients {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3em;
+  padding: 6em 4em;
+}
+
+.recommendation_client {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 1em;
+  font-weight: 500;
+}
+
+.recommendation_client__img {
+  border-radius: 50%;
+}
+
+.recommendation_client__name {
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+}

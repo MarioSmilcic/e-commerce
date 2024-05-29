@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./navigation.style.css";
 import CartIcon from "../../components/CartIcon/CartIcon";
 import Logo from "../../components/Logo/Logo";
@@ -12,12 +12,14 @@ const Navigation = () => {
     setShowModal(!showModal);
   };
 
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="navigation_outer">
         <div className="navigation">
           <div className="logo">
-            <Logo />
+            <Logo onNavigate={() => navigate("/")} />
           </div>
           <div className="links">
             <Link to={{ pathname: "/" }}>Home</Link>
