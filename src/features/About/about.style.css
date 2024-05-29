@@ -1,0 +1,90 @@
+.about {
+  background: white;
+  /* width: 100vw; */
+  width: 100%;
+  color: black;
+  /* padding: 10em 4em; */
+  padding: 10em 0;
+  overflow: hidden;
+}
+
+.about_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 0 2em; */
+  background: #fcf6f1;
+  background-color: #e5e4e2;
+  gap: 2em;
+  padding: 4em;
+}
+
+.about_info__left {
+  display: flex;
+  justify-content: start;
+  align-items: left;
+  flex-direction: column;
+  /* background: #fcf6f1; */
+  gap: 2em;
+}
+
+.about_info__right {
+  display: flex;
+  max-width: 100%;
+  max-width: 50%;
+}
+
+.about_mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 2em; */
+  margin: 0 0 2em;
+  padding: 4em;
+}
+
+.about_mission__left {
+  display: flex;
+  max-width: 50%;
+}
+.about_mission__right {
+  display: flex;
+  flex-direction: column;
+  /* background: #fcf6f1; */
+  gap: 3em;
+  padding: 2em;
+}
+
+.about_story {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fcf6f1;
+  background-color: #e5e4e2;
+
+  padding: 4em;
+}
+
+.about_story__left {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  /* background: #fcf6f1; */
+}
+.about_story__right {
+  display: flex;
+  /* max-width: 500px; */
+  max-width: 50%;
+}
+
+@media (max-width: 768px) {
+  .about_info,
+  .about_mission,
+  .about_story {
+    flex-direction: column;
+  }
+  .about_mission__left,
+  .about_story__right {
+    max-width: 100%;
+  }
+}

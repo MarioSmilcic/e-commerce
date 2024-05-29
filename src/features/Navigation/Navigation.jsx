@@ -32,7 +32,7 @@ const Navigation = () => {
             <CartIcon />
           </div>
         </div>
-        <NavModal onNavModal={handleModal} />
+        {/* <NavModal onNavModal={handleModal} /> */}
       </div>
     </>
   );
