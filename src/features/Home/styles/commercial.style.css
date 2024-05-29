@@ -18,3 +18,13 @@
   filter: none;
   opacity: 1;
 }
+
+@media (max-width: 992px) {
+  .commercial_icons {
+    margin: 0 2em 0;
+    gap: 8px;
+  }
+  .commercial_icon {
+    max-width: 50px;
+  }
+}
