@@ -1,0 +1,165 @@
+.contact {
+  background: white;
+  color: black;
+  padding: 10em 4em;
+}
+
+.contact_container {
+  display: flex;
+  gap: 4em;
+  justify-content: start;
+  align-items: start;
+  font-weight: 500;
+}
+
+.contact_info {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 50%;
+  font-size: large;
+}
+
+.contact_info__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.contact_location {
+  display: flex;
+  gap: 1em;
+}
+.contact_location__title {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact_location__street {
+  font-style: italic;
+  font-weight: normal;
+}
+
+.contact_phone {
+  display: flex;
+  gap: 1em;
+}
+.contact_phone__title {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact_phone__number {
+  font-style: italic;
+  font-weight: normal;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  background: #e5e4e2;
+  border-radius: 1em;
+  padding: 4em;
+  gap: 1em;
+}
+
+.contact_form__data {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact_form__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_form__input {
+  width: 28em;
+  height: 3.5em;
+  border-radius: 8px;
+  background: white;
+  text-indent: 1rem;
+  border: transparent;
+  color: black;
+}
+.contact_form__input::placeholder,
+.contact_form__area::placeholder {
+  font-size: medium;
+  font-family: arial;
+  color: gray;
+}
+.contact_form__area {
+  width: 28em;
+  height: 10em;
+  border: transparent;
+  padding: 1rem;
+  border-radius: 8px;
+  background: white;
+  color: black;
+}
+
+.contact_form__checkbox {
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+.contact_form__span {
+  color: blue;
+}
+
+.contact_bot {
+  position: relative;
+  margin-left: 350px;
+  top: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .contact_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact_form__input,
+  .contact_form__area {
+    width: 24em;
+  }
+  .contact_bot {
+    margin-left: 300px;
+  }
+  .contact_form {
+    text-align: center;
+    padding: 3em;
+  }
+  .contact_form__data {
+    text-align: left;
+  }
+  .contact_info {
+    text-align: justify;
+  }
+  .contact_container {
+    gap: 1em;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact_form__input,
+  .contact_form__area {
+    width: 20em;
+  }
+  .contact_bot {
+    margin-left: 250px;
+  }
+  .contact_form {
+    padding: 2em;
+  }
+  .contact {
+    padding: 10em 2em;
+  }
+}
