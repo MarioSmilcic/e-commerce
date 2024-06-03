@@ -6,7 +6,7 @@ const Button = ({ text }) => {
       <button
         className={`button ${text === "shop now" && "button_shop"} ${
           text === "get product information" && "button_information"
-        }`}
+        } ${text === "Submit your request" && "button_contact"} `}
       >
         {text}
       </button>

@@ -14,11 +14,6 @@ const About = () => {
         </div>
         <img
           src="https://images.squarespace-cdn.com/content/v1/6348398d9d21fd6277c64f96/53d406e4-1a68-4d93-9f82-0ea6c809b2bf/hackman+team+factors+article.png"
-          // src="https://assets-global.website-files.com/5e6aa7798a5728055c457ebb/64e3afacb378f2e8a0f70cd8_20230821T0632-63fa87c1-4382-4830-a8fb-6ec599549477.jpeg"
-
-          // src="https://blogassets.leverageedu.com/blog/wp-content/uploads/2020/05/13204533/Teamwork.png"
-          // src="https://d.newsweek.com/en/full/2282869/figures-teamwork-brainstorming.jpg?w=1200&f=8c555098acf085f0a9695ae6a5e15c91"
-          // src="https://instandart.com/wp-content/uploads/2024/01/team-building.jpeg"
           alt="team"
           className="about_info__right"
         />
@@ -56,7 +51,6 @@ const About = () => {
         </div>
         <img
           src="https://www.realityhr.co.uk/wp-content/uploads/Reality-HR-team-building.png"
-          // src="https://reputationtoday.in/wp-content/uploads/2020/06/Team-Work-Problems-Inlea-e1504472827418-624x437.jpg"
           alt="story"
           className="about_story__right"
         />
