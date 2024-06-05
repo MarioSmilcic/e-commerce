@@ -1,0 +1,43 @@
+.offer {
+  padding: 8em 4em;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+  gap: 2em;
+
+  justify-items: center;
+  align-items: center;
+
+  background-color: white;
+}
+
+.offer_item {
+  display: flex;
+  flex-direction: column;
+  justify-items: space-around;
+  align-items: stretch;
+  gap: 1em;
+  color: black;
+}
+
+.offer_img {
+  display: flex;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+
+  background-color: #e5e4e2;
+  padding: 2em;
+}
+
+.offer_item__title {
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+}
+
+.offer_price::after {
+  content: "00";
+}
