@@ -1,8 +1,11 @@
 import "./cartIcon.style.css";
 import { useNavigate } from "react-router-dom";
+import { useOrderCartStore } from "../../store/orders/order.store";
 
 const CartIcon = () => {
   const navigate = useNavigate();
+
+  const { orders } = useOrderCartStore();
 
   const handleClickCart = () => {
     navigate("/cart");
@@ -10,6 +13,7 @@ const CartIcon = () => {
 
   return (
     <div onClick={() => handleClickCart()}>
+      <span className="orders_number">{orders.length}</span>
       <svg
         className="cart_icon"
         id="Capa_1"

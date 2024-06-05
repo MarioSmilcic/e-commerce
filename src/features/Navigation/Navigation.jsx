@@ -4,9 +4,11 @@ import CartIcon from "../../components/CartIcon/CartIcon";
 import Logo from "../../components/Logo/Logo";
 import { useState } from "react";
 import NavModal from "./components/NavModal";
+import { useOrderCartStore } from "../../store/orders/order.store";
 
 const Navigation = () => {
   const [showModal, setShowModal] = useState(false);
+  const { orders } = useOrderCartStore();
 
   const handleModal = () => {
     setShowModal(!showModal);
@@ -29,7 +31,8 @@ const Navigation = () => {
             <Link to={{ pathname: "/contact" }}>Contact</Link>
           </div>
           <div className="navigation_cart">
-            <CartIcon />
+            {/* <CartIcon /> */}
+            {orders.length > 0 && <CartIcon />}
           </div>
         </div>
         {/* <NavModal onNavModal={handleModal} /> */}
