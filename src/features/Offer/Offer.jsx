@@ -1,8 +1,14 @@
 import "./offer.style.css";
 import { items } from "../../components/data/itemsData";
 import Button from "../../components/Button/Button";
+import { useOrderCartStore } from "../../store/orders/order.store";
 
 const Offer = () => {
+  const { addItemToOrderCart } = useOrderCartStore();
+  const handleOrder = (item) => {
+    addItemToOrderCart(item);
+  };
+
   return (
     <div className="offer">
       {items.map((item) => (
@@ -10,16 +16,14 @@ const Offer = () => {
           <img src={item.image} alt="image" className="offer_img" />
           <div className="offer_item__title">
             <h3>{item.name}</h3>
-            {/* <h3 className="offer_price"> */}
             <h3>
               <sup>$</sup>
               {item.price}
-              {/* <sup>00</sup> */}
               <sup className="offer_price" />
             </h3>
           </div>
           <p>{item.description}</p>
-          <Button text="Add to Cart" />
+          <Button text="Add to Cart" handleClick={() => handleOrder(item)} />
           <hr />
         </div>
       ))}

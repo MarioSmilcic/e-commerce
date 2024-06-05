@@ -1,8 +1,15 @@
 import "./cartIcon.style.css";
+import { useNavigate } from "react-router-dom";
 
 const CartIcon = () => {
+  const navigate = useNavigate();
+
+  const handleClickCart = () => {
+    navigate("/cart");
+  };
+
   return (
-    <div>
+    <div onClick={() => handleClickCart()}>
       <svg
         className="cart_icon"
         id="Capa_1"
