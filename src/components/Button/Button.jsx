@@ -1,17 +1,35 @@
 import "./button.style.css";
 
 const Button = ({ text, handleClick }) => {
+  let color;
+
+  switch (text) {
+    case "shop now":
+      color = "button_shop";
+      break;
+    case "get product information":
+      color = "button_information";
+      break;
+    case "Submit your request":
+      color = "button_contact";
+      break;
+    case "Add to Cart":
+      color = "button_item";
+      break;
+    case "Proceed to checkout":
+      color = "button_cart";
+      break;
+    case "Continue shopping":
+      color = "button_cart";
+      break;
+
+    default:
+      color = "button";
+  }
+
   return (
     <div>
-      <button
-        onClick={handleClick}
-        className={`button ${text === "shop now" && "button_shop"} ${
-          text === "get product information" && "button_information"
-        } ${text === "Submit your request" && "button_contact"} ${
-          text === "Add to Cart" && "button_item"
-        } ${text === "Proceed to checkout" && "button_cart"}
-        ${text === "Continue shopping" && "button_cart"}`}
-      >
+      <button onClick={handleClick} className={`button ${color}`}>
         {text}
       </button>
     </div>
