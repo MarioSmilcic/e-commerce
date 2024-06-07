@@ -51,11 +51,16 @@
   background-color: white;
   color: black;
   border: 1px solid gray;
-  /* font-weight: normal; */
 }
 .button_item:hover {
   background-color: #f47950;
   color: white;
+}
+
+.button_item:active {
+  background-color: white;
+  color: black;
+  border-color: black;
 }
 .button_cart {
   width: 100%;
@@ -69,6 +74,11 @@
   color: white;
   background: #047a9c;
   border-color: transparent;
+}
+.button_cart:active {
+  background: white;
+  border-color: black;
+  color: black;
 }
 
 @media (max-width: 992px) {

@@ -13,7 +13,7 @@ const CartIcon = () => {
 
   return (
     <div onClick={() => handleClickCart()}>
-      <span className="orders_number">{orders.length}</span>
+      {/* <span className="orders_number">{orders.length}</span> */}
       <svg
         className="cart_icon"
         id="Capa_1"

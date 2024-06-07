@@ -31,8 +31,12 @@ const Navigation = () => {
             <Link to={{ pathname: "/contact" }}>Contact</Link>
           </div>
           <div className="navigation_cart">
-            {/* <CartIcon /> */}
-            {orders.length > 0 && <CartIcon />}
+            {orders.length > 0 && (
+              <>
+                <CartIcon />
+                <span className="orders_number">{orders.length}</span>
+              </>
+            )}
           </div>
         </div>
         {/* <NavModal onNavModal={handleModal} /> */}
