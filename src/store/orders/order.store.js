@@ -2,11 +2,7 @@ import { create } from "zustand";
 
 export const useOrderCartStore = create((set) => ({
   orders: [],
-  addItemToOrderCart: (newItem) =>
-    set((state) => ({ orders: [...state.orders, newItem] })), // Append the new item to the cart array
 
-  /*
-  
   addItemToOrderCart: (newItem) =>
     set((state) => {
       const existingItem = state.orders.find((item) => item.id === newItem.id);
@@ -31,12 +27,13 @@ export const useOrderCartStore = create((set) => ({
           ],
         };
       }
-    }), // Append the new item to the cart array
+    }),
 
   removeItemFromOrderCart: (itemId) =>
     set((state) => ({
       orders: state.orders.filter((item) => item.id !== itemId),
-    })), // Remove the item from the cart array by filtering out the item with the given ID
+    })),
+
   clearOrderCart: () => set({ orders: [] }),
 
   increaseItemQuantity: (itemId) =>
@@ -64,5 +61,4 @@ export const useOrderCartStore = create((set) => ({
           : item
       ),
     })),
-    */
 }));

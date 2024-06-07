@@ -2,11 +2,10 @@
   cursor: pointer;
 }
 
-.orders_number {
+/* .orders_number {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   color: white;
   background: red;
   padding: 8px;
@@ -14,4 +13,4 @@
   position: relative;
   left: 30px;
   top: 20px;
-}
+} */
