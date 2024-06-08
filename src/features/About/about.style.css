@@ -3,8 +3,8 @@
   color: black;
   /* padding: 10em 4em; */
   /* padding: 10em 0 */
-  padding: 5em 0;
-  overflow: hidden;
+  /* padding: 5em 0; */
+  /* overflow: hidden; */
 }
 
 .about_info {
@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   background: #fcf6f1;
-  background-color: #e5e4e2;
+  /* background-color: #e5e4e2; */
   gap: 2em;
   padding: 4em;
 }

@@ -9,9 +9,12 @@
 }
 
 .recommendations_clients {
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 3em; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 3em;
   padding: 6em 4em;
 }

@@ -4,10 +4,12 @@ import { commercialIcons } from "../../../components/commercialIcons";
 
 const CommercialIcons = () => {
   return (
-    <div className="commercial_icons">
-      {commercialIcons.map((icon) => (
-        <img className="commercial_icon" key={icon.id} src={icon.imgSrc} />
-      ))}
+    <div className="commercial_icons__outer">
+      <div className="commercial_icons">
+        {commercialIcons.map((icon) => (
+          <img className="commercial_icon" key={icon.id} src={icon.imgSrc} />
+        ))}
+      </div>
     </div>
   );
 };

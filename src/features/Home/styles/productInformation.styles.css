@@ -72,3 +72,9 @@ ul li:before {
   color: green;
   margin: 8px;
 }
+
+@media (max-width: 768px) {
+  .productInformation_action {
+    flex-direction: column;
+  }
+}

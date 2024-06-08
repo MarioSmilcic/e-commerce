@@ -1,7 +1,5 @@
 .cart {
   /* width: 100%; */
-  width: 100vw;
-  /* height: 100vh; */
   background-color: #e5e4e2;
   color: black;
   display: flex;
@@ -9,8 +7,17 @@
   align-items: center;
 }
 .cart_container {
+  /* width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  place-items: center; */
+  /* text-align: center; */
+
   background: white;
   margin: 4em;
+  /* margin: 0 auto; */
   margin-top: 5em;
   padding: 2em 1em;
   border-radius: 8px;
