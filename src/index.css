@@ -6,14 +6,16 @@
   /* font-weight: 400; */
 
   /* color-scheme: light dark; */
-  color: rgba(255, 255, 255, 0.87);
-  /* background-color: #f4533e; */
-  background-color: #047a9c;
+  /* color: rgba(255, 255, 255, 0.87); */
 
-  font-synthesis: none;
+  /* background-color: #f4533e; */
+  /* background-color: #047a9c; */
+  /* background-color: white; */
+
+  /* font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
 * {
   box-sizing: border-box;
@@ -22,10 +24,10 @@
 }
 
 body {
-  display: flex;
+  /* display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100vh; */
 }
 
 h1 {

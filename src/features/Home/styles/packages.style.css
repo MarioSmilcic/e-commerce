@@ -9,10 +9,14 @@
 }
 
 .packages_products {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 3em; */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 3em;
 }
 .packages_product {
@@ -26,6 +30,7 @@
 
 .packages_img {
   max-width: 100%;
+  /* max-width: 200px; */
 }
 
 .packages_title {

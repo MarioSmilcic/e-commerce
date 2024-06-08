@@ -1,11 +1,20 @@
+.commercial_icons__outer {
+  background-color: #047a9c;
+}
+
 .commercial_icons {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 1em;
+
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+
   background: white;
   padding: 1em 0;
-  margin: 0 3em 0;
+  /* margin: 0 3em 0; */
+  margin: 0 4em 0;
 }
 
 .commercial_icon {

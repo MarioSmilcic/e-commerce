@@ -1,7 +1,9 @@
 .contact {
   background: white;
   color: black;
-  padding: 10em 4em;
+  /* padding: 10em 4em; */
+  /* padding: 2em 4em; */
+  padding: 4em;
 }
 
 .contact_container {

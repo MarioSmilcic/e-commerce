@@ -1,6 +1,7 @@
 .lastPage {
-  background: white;
+  /* background: white; */
   padding: 2em 4em;
+  color: white;
 }
 
 .lastPage_outer {

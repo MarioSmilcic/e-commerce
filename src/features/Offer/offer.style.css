@@ -1,9 +1,12 @@
 .offer {
-  padding: 8em 4em;
+  /* padding: 8em 4em; */
+  padding: 2em 4em;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* grid-template-columns: repeat(4, minmax(200px, 1fr)); */
+
   gap: 2em;
 
   justify-items: center;
