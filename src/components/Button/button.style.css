@@ -80,6 +80,26 @@
   border-color: black;
   color: black;
 }
+.button_checkout {
+  width: 25em;
+  /* width: 100%; */
+  text-transform: none;
+  background: #047a9c;
+
+  border-color: lightgray;
+  color: white;
+}
+.button_checkout:hover {
+  color: black;
+  background: white;
+  border-color: transparent;
+  border-color: black;
+}
+.button_checkout:active {
+  background: white;
+  border-color: black;
+  color: lightgray;
+}
 
 @media (max-width: 992px) {
   .button {

@@ -5,7 +5,9 @@
   left: 0;
   width: 100%;
   z-index: 3;
-  background-color: #e5e4e2;
+  /* background-color: #e5e4e2; */
+  /* background-color: #384f76; */
+  background: white;
 }
 
 .navigation {
@@ -20,6 +22,7 @@
   /* padding: 0 2em; */
   padding: 1em 4em;
   /* padding: 0 4em; */
+  border: 1px solid #e5e4e2;
 }
 
 .navigation a,

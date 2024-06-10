@@ -137,3 +137,9 @@
   gap: 1em;
   margin: 1em 0;
 }
+
+.emptyCart {
+  text-align: center;
+  margin-top: 8em;
+  font-weight: bold;
+}
