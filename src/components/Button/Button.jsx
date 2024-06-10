@@ -22,6 +22,9 @@ const Button = ({ text, handleClick }) => {
     case "Continue shopping":
       color = "button_cart";
       break;
+    case "Proceed to Savings & Payments":
+      color = "button_checkout";
+      break;
 
     default:
       color = "button";
