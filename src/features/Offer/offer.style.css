@@ -23,6 +23,14 @@
   gap: 1em;
   color: black;
 }
+.offer_img-container {
+  background-color: #e5e4e2;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  align-items: end;
+  padding: 1em;
+}
 
 .offer_img {
   display: flex;
@@ -31,7 +39,7 @@
   max-width: 100%;
   object-fit: cover;
 
-  background-color: #e5e4e2;
+  /* background-color: #e5e4e2; */
   padding: 2em;
 }
 

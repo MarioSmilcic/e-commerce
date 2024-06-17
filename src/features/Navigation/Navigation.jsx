@@ -5,6 +5,8 @@ import Logo from "../../components/Logo/Logo";
 import { useState } from "react";
 import NavModal from "./components/NavModal";
 import { useOrderCartStore } from "../../store/orders/order.store";
+import Hamburger from "../../components/icons/Hamburger";
+import Close from "../../components/icons/Close";
 
 const Navigation = () => {
   const [showModal, setShowModal] = useState(false);
@@ -38,8 +40,12 @@ const Navigation = () => {
               </>
             )}
           </div>
+          <div className="hamburger">
+            {!showModal && <Hamburger onModal={handleModal} />}
+            {showModal && <Close onClose={handleModal} />}
+          </div>
         </div>
-        {/* <NavModal onNavModal={handleModal} /> */}
+        {showModal && <NavModal onNavModal={handleModal} />}
       </div>
     </>
   );

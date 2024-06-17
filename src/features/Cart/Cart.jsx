@@ -15,12 +15,6 @@ const Cart = () => {
 
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   if (!orders.length) {
-  //     navigate("/offer");
-  //   }
-  // }, [orders]);
-
   const handleRemoveItem = (id) => {
     removeItemFromOrderCart(id);
   };
@@ -116,7 +110,10 @@ const Cart = () => {
                 text="Proceed to checkout"
                 handleClick={() => navigate("/checkout")}
               />
-              <Button text="Continue shopping" />
+              <Button
+                text="Continue shopping"
+                handleClick={() => navigate("/offer")}
+              />
             </div>
           </div>
         </div>
