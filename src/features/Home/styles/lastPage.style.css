@@ -1,5 +1,4 @@
 .lastPage {
-  /* background: white; */
   padding: 2em 4em;
   color: white;
 }
@@ -32,9 +31,14 @@
   margin: 12px 0;
 }
 
-/* .footer {
-  color: black;
-  text-align: center;
-  margin: 3em;
-  font-weight: 500;
-} */
+@media (max-width: 768px) {
+  .lastPage {
+    padding: 2em;
+  }
+  .lastPage_outer {
+    flex-direction: column;
+    place-items: center;
+    gap: 2em;
+    padding: 4em 2em;
+  }
+}

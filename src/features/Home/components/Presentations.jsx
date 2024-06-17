@@ -28,7 +28,8 @@ const presentation_icons = [
 const Landing2 = () => {
   return (
     <div className="presentation">
-      <h2 className="presentation_title">Beautiful presentations made easy.</h2>
+      {/* <h2 className="presentation_title">Beautiful presentations made easy.</h2> */}
+      <h1 className="presentation_title">Beautiful presentations made easy.</h1>
       <p className="presentation_info">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do elusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
