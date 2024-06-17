@@ -1,6 +1,5 @@
 .recommendations {
   background: white;
-  padding: 3;
   color: black;
   text-align: center;
 }
@@ -9,10 +8,6 @@
 }
 
 .recommendations_clients {
-  /* display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 3em; */
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 3em;
@@ -35,4 +30,19 @@
   color: red;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .recommendations {
+    padding: 2em;
+  }
+  .recommendations_clients {
+    padding: 6em 2em;
+  }
+}
+
+@media (max-width: 576px) {
+  .recommendations_clients {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
 }

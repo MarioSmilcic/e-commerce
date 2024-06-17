@@ -54,3 +54,9 @@
   align-items: center;
   gap: 1em;
 }
+
+@media (max-width: 768px) {
+  .packages {
+    padding: 2em;
+  }
+}

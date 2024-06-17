@@ -23,15 +23,11 @@ const LastPage = () => {
           <div>
             <img
               src={Headphones}
-              alt="slusalice"
+              alt="headphones"
               className="lastPage_headphones"
             />
           </div>
         </div>
-        {/* <p className="footer">
-          Copyright © domainname.com. All Rights Reserved | Designed by:
-          buylandingpagedesign.com
-        </p> */}
       </div>
     </>
   );

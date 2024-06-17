@@ -49,32 +49,19 @@
   .landing_outer {
     flex-direction: column;
     place-items: center;
-    padding: 14em 2em;
+    gap: 2em;
+    padding: 4em 2em;
+    /* padding: 14em 2em; */
   }
   .landing_info {
     place-items: center;
     width: 100%;
+    gap: 2em;
   }
   .landing_text {
     word-wrap: break-word;
   }
   .landing_headpones {
-    max-width: 30%;
+    max-width: 100%;
   }
-  /* .landing_line {
-    width: 50%;
-  } */
-  /* .landing_heading {
-    font-size: 1rem;
-  } */
-}
-
-@media (max-width: 576px) {
-  /* .button {
-    font-size: small;
-  }
-  .landing_outer {
-    font-weight: 500;
-    padding: 2em;
-  } */
 }

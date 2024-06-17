@@ -105,6 +105,10 @@
   .button {
     font-size: medium;
   }
+  .button_information {
+    width: 15em;
+    height: 2.5em;
+  }
 }
 
 @media (max-width: 768px) {
@@ -116,5 +120,9 @@
 @media (max-width: 576px) {
   .button {
     font-size: small;
+  }
+  .button_information {
+    width: 18em;
+    height: 3em;
   }
 }

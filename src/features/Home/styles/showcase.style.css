@@ -20,7 +20,6 @@
   align-items: start;
   gap: 2em;
   color: black;
-  /* width: 50%; */
   padding: 5em;
 }
 
@@ -29,11 +28,25 @@
   justify-content: center;
   align-items: center;
   align-text: center;
-  /* width: 50%; */
   padding: 5em;
 }
 
 .showcase_headphones__img {
   max-width: 100%;
   filter: invert(100%);
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .showcase {
+    flex-direction: column;
+    background: white;
+  }
+  .showcase_headphones {
+    background: #047a9c;
+    padding: 2em;
+  }
+  .showcase_info {
+    padding: 2em;
+  }
 }

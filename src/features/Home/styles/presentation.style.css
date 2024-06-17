@@ -34,8 +34,18 @@
 
 .presentation_info {
   text-align: center;
-  width: 50%;
   width: 60%;
-  /* padding: 1em; */
-  /* font-size: 1rem; */
+}
+
+@media (max-width: 768px) {
+  .presentation {
+    padding: 10em 2em;
+  }
+  .presentation_info {
+    width: 100%;
+    padding: 2em 0;
+  }
+  .presentation_icons {
+    flex-wrap: wrap;
+  }
 }
