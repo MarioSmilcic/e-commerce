@@ -1,5 +1,4 @@
 .navigation_outer {
-  /* position: fixed; */
   position: sticky;
   top: 0;
   left: 0;
@@ -11,34 +10,71 @@
 }
 
 .navigation {
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%; */
   text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 0 2em; */
   padding: 1em 4em;
-  /* padding: 0 4em; */
   border: 1px solid #e5e4e2;
 }
 
-.navigation a,
+/* .navigation a,
 .nav_modal a {
   color: #3c5473;
   font-size: 1.2rem;
   text-decoration: none;
   font-weight: 500;
-}
+} */
 
-.navigation a:hover,
+/* .navigation a:hover,
 a.active,
 .nav_modal a:hover,
 a.active {
   color: #f47950;
+} */
+
+a {
+  position: relative;
+  text-decoration: none;
+  /* color: #a0a0a0; */
+  color: #3c5473;
+
+  font-size: 18px;
+
+  font-size: 1.2rem;
+
+  letter-spacing: 0.5px;
+  padding: 0 10px;
 }
+a:before,
+a:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  /* background-color: #18f08b; */
+  /* background-color: black; */
+  background-color: #3c5473;
+
+  transition: 0.5s;
+}
+a:after {
+  left: 0;
+  bottom: -10px;
+}
+a:before {
+  right: 0;
+  top: -10px;
+}
+a:hover {
+  /* color: #ffffff; */
+  /* color: black; */
+}
+a:hover:after,
+a:hover:before {
+  width: 100%;
+}
+
 .logo {
   display: flex;
 }
@@ -74,6 +110,17 @@ a.active {
   left: -10px;
   /* font-size: small; */
 }
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+    /* margin: 0 1.5em; */
+  }
+}
 
 @media (max-width: 768px) {
   .links {
@@ -84,6 +131,9 @@ a.active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 1.5em;
+  }
+  .navigation {
+    border-color: transparent;
   }
 }

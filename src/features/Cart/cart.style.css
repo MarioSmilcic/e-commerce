@@ -102,7 +102,18 @@
   z-index: 1;
   padding: 0 12px;
   font-size: 1.1rem;
+  cursor: pointer;
+  background: #047a9c;
+  color: white;
 }
+.cart_promocode__apply:hover {
+  background: white;
+  color: black;
+}
+.cart_promocode__apply:active {
+  color: lightgray;
+}
+
 .cart_promocode__text {
   color: gray;
   padding: 1em 0;
