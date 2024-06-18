@@ -32,17 +32,20 @@ const Navigation = () => {
             <Link to={{ pathname: "/about" }}>About</Link>
             <Link to={{ pathname: "/contact" }}>Contact</Link>
           </div>
-          <div className="navigation_cart">
-            {orders.length > 0 && (
-              <>
-                <CartIcon />
-                <span className="orders_number">{orders.length}</span>
-              </>
-            )}
-          </div>
-          <div className="hamburger">
-            {!showModal && <Hamburger onModal={handleModal} />}
-            {showModal && <Close onClose={handleModal} />}
+
+          <div className="cart_hamburger">
+            <div className="navigation_cart">
+              {orders.length > 0 && (
+                <>
+                  <CartIcon />
+                  <span className="orders_number">{orders.length}</span>
+                </>
+              )}
+            </div>
+            <div className="hamburger">
+              {!showModal && <Hamburger onModal={handleModal} />}
+              {showModal && <Close onClose={handleModal} />}
+            </div>
           </div>
         </div>
         {showModal && <NavModal onNavModal={handleModal} />}

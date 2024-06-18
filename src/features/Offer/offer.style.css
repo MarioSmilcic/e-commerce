@@ -52,3 +52,9 @@
 .offer_price::after {
   content: "00";
 }
+
+@media (max-width: 768px) {
+  .offer {
+    padding: 2em;
+  }
+}

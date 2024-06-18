@@ -2,7 +2,6 @@ import "./cart.style.css";
 import { useOrderCartStore } from "../../store/orders/order.store";
 import Button from "../../components/Button/Button";
 import { useNavigate } from "react-router-dom";
-// import { useEffect } from "react";
 
 const Cart = () => {
   const {
@@ -10,7 +9,6 @@ const Cart = () => {
     removeItemFromOrderCart,
     increaseItemQuantity,
     decreaseItemQuantity,
-    // clearOrderCart,
   } = useOrderCartStore();
 
   const navigate = useNavigate();
@@ -69,7 +67,7 @@ const Cart = () => {
                     </span>
                   </div>
 
-                  <h3>${itemTotalPrice(item)}</h3>
+                  <h3 className="cart-item_price">${itemTotalPrice(item)}</h3>
                   <img
                     src="https://www.freeiconspng.com/thumbs/trash-can-icon/trash-can-icon-19.png"
                     alt="trash"

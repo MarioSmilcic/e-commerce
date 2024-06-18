@@ -1,10 +1,6 @@
 .about {
   background: white;
   color: black;
-  /* padding: 10em 4em; */
-  /* padding: 10em 0 */
-  /* padding: 5em 0; */
-  /* overflow: hidden; */
 }
 
 .about_info {
@@ -12,7 +8,6 @@
   justify-content: center;
   align-items: center;
   background: #fcf6f1;
-  /* background-color: #e5e4e2; */
   gap: 2em;
   padding: 4em;
 }
@@ -27,7 +22,6 @@
 
 .about_info__right {
   display: flex;
-  max-width: 100%;
   max-width: 50%;
 }
 
@@ -77,11 +71,18 @@
     flex-direction: column;
     text-align: center;
     text-align: justify;
+    padding: 2em;
 
     gap: 1em;
   }
   .about_mission__left,
   .about_story__right {
     max-width: 100%;
+  }
+  .about_info__right {
+    max-width: 100%;
+  }
+  .about_mission__right {
+    padding: 0;
   }
 }

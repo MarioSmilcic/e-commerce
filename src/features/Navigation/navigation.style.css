@@ -4,8 +4,6 @@
   left: 0;
   width: 100%;
   z-index: 3;
-  /* background-color: #e5e4e2; */
-  /* background-color: #384f76; */
   background: white;
 }
 
@@ -18,25 +16,9 @@
   border: 1px solid #e5e4e2;
 }
 
-/* .navigation a,
-.nav_modal a {
-  color: #3c5473;
-  font-size: 1.2rem;
-  text-decoration: none;
-  font-weight: 500;
-} */
-
-/* .navigation a:hover,
-a.active,
-.nav_modal a:hover,
-a.active {
-  color: #f47950;
-} */
-
 a {
   position: relative;
   text-decoration: none;
-  /* color: #a0a0a0; */
   color: #3c5473;
 
   font-size: 18px;
@@ -52,8 +34,6 @@ a:after {
   position: absolute;
   height: 3px;
   width: 0;
-  /* background-color: #18f08b; */
-  /* background-color: black; */
   background-color: #3c5473;
 
   transition: 0.5s;
@@ -66,10 +46,7 @@ a:before {
   right: 0;
   top: -10px;
 }
-a:hover {
-  /* color: #ffffff; */
-  /* color: black; */
-}
+
 a:hover:after,
 a:hover:before {
   width: 100%;
@@ -108,21 +85,16 @@ a:hover:before {
   position: relative;
   top: -10px;
   left: -10px;
-  /* font-size: small; */
 }
 .hamburger {
   display: none;
-  cursor: pointer;
 }
+
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
     cursor: pointer;
-    /* margin: 0 1.5em; */
   }
-}
-
-@media (max-width: 768px) {
   .links {
     display: none;
   }
@@ -137,5 +109,15 @@ a:hover:before {
   .navigation {
     border-color: transparent;
     padding: 1em 2em;
+  }
+  .cart_hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 576px) {
+  .orders_number {
+    font-size: small;
+    padding: 6px 12px;
   }
 }
